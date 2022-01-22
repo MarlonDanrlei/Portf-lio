@@ -5,13 +5,18 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-header{
-    width: 100%;
-    height: 100vh;
-    background-color: rgb(94, 94, 94);
+body{
+    background-color: #333;
     background-image: linear-gradient(rgba(0, 0, 0,0.7), rgba(0, 0, 0,0.7)), url(img/fundo.jpg);
     background-position: center;
     background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+header{
+    width: 100%;
+    height: 100vh; 
 }
 
 a{
@@ -24,6 +29,8 @@ header .menu{
     align-items: center;
     justify-content: space-between;
     padding: 40px;
+    background: #23232e no-repeat;
+    height: 8vh;
 }
 
 header .menu li{
@@ -52,14 +59,24 @@ header .menu .ativo, header .menu a:hover{
 
 .principal h2{
     color: white;
-    font-size: 45px;
+    font-size: 35px;
     text-align: center;
     border-radius: 10px;
     padding: 10px 20px;
     transition: 500ms;
+    text-transform: uppercase;
 }
 
-
+.principal h1{
+    color: white;
+    font-size: 60px;
+    text-align: center;
+    border-radius: 10px;
+    padding: 10px 20px;
+    transition: 500ms;
+    font-weight: 900;
+    text-transform: uppercase ;
+}
 
 .principal .links a{
     color: white;
@@ -69,9 +86,62 @@ header .menu .ativo, header .menu a:hover{
     border-radius: 8px;
     margin-top: 20px;
     transition: 200ms;
+    font-weight: 800;
 }
 
 .principal .links a:hover{
     color: #444;
     background-color: white;
+}
+
+#main {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin: 5px auto;
+    display: flex;
+}
+
+
+.css{
+    text-align: center;
+}
+
+.csshtml {
+    display: flex;
+    color: rgb(241, 238, 238);
+} 
+
+.linkedin:hover, .git:hover {
+    box-shadow: 0 0 10px #9b2020,
+                0 0 20px #9b2020,
+                0 0 30px #9b2020,
+                0 0 40px #9b2020,
+                0 0 50px #9b2020;
+}
+
+.git {
+    margin-left: 5px;
+}
+
+
+
+.html, .css {
+    width: 400px;
+    height: 250px;
+    margin: 20px;
+    margin-bottom: 60px;
+    padding: 20px;
+    text-align: center;
+    font-size: 1.2rem;
+    background: linear-gradient( rgba(199, 181, 181, 0.7),rgba(43, 42, 42, 0.7));
+}
+
+.html h2, .css h2 {
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0px 1px #9b2020,
+                 0 0px 2px #9b2020,
+                 0 0px 3px #9b2020,
+                 0 0px 4px #9b2020,
+                 0 0px 5px #9b2020;
 }
